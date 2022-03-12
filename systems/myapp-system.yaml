@@ -5,6 +5,6 @@ metadata:
   description: myapp
   labels:
     size: medium
-    environments: build,dev,qa,prod
+    environments: build-dev-qa-prod
 spec:
   owner: demo-team-a
