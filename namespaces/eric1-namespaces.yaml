@@ -1,0 +1,52 @@
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: eric1-build
+  labels:
+    app : eric1
+    team: Eric Sauer
+    build-namespace: eric1-build
+    size: small
+    environment: build
+    goldilocks.fairwinds.com/enabled: "true"
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: eric1-dev
+  labels:
+    app : eric1
+    team: Eric Sauer
+    build-namespace: eric1-build
+    size: small
+    environment: dev
+    goldilocks.fairwinds.com/enabled: "true"
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: eric1-qa
+  labels:
+    app : eric1
+    team: Eric Sauer
+    build-namespace: eric1-build
+    size: small
+    environment: qa
+    goldilocks.fairwinds.com/enabled: "true"
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: eric1-prod
+  labels:
+    app : eric1
+    team: Eric Sauer
+    build-namespace: eric1-build
+    size: small
+    environment: prod
+    goldilocks.fairwinds.com/enabled: "true"
