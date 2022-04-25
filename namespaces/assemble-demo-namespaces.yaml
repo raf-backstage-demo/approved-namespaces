@@ -1,0 +1,52 @@
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: assemble-demo-build
+  labels:
+    app : assemble-demo
+    team: demo-team-a
+    build-namespace: assemble-demo-build
+    size: large
+    environment: build
+    goldilocks.fairwinds.com/enabled: "true"
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: assemble-demo-dev
+  labels:
+    app : assemble-demo
+    team: demo-team-a
+    build-namespace: assemble-demo-build
+    size: large
+    environment: dev
+    goldilocks.fairwinds.com/enabled: "true"
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: assemble-demo-qa
+  labels:
+    app : assemble-demo
+    team: demo-team-a
+    build-namespace: assemble-demo-build
+    size: large
+    environment: qa
+    goldilocks.fairwinds.com/enabled: "true"
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: assemble-demo-prod
+  labels:
+    app : assemble-demo
+    team: demo-team-a
+    build-namespace: assemble-demo-build
+    size: large
+    environment: prod
+    goldilocks.fairwinds.com/enabled: "true"
