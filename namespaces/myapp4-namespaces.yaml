@@ -24,6 +24,7 @@ metadata:
     size: small
     environment: dev
     goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: myapp4-build
 
 ---
 apiVersion: v1
@@ -37,6 +38,7 @@ metadata:
     size: small
     environment: qa
     goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: myapp4-build
 
 ---
 apiVersion: v1
@@ -50,3 +52,4 @@ metadata:
     size: small
     environment: prod
     goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: myapp4-build
