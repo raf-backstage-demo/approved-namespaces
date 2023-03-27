@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: myapp3
+  description: myapp3
+  labels:
+    size: medium
+    environments: build-dev-qa-prod
+spec:
+  owner: group:default/demo-team-a
